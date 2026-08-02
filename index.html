@@ -246,7 +246,7 @@ function contactRow(icon,text){
   return `<div class="contact-row">${s(icon)}<span>${text}</span></div>`;
 }
 function photoImg(filename, altText){
-  return `<img src="images/${filename}" alt="${altText}" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+  return `<img src="${filename}" alt="${altText}" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
     <div class="photo-placeholder" style="display:none;">${s('image')}<span>Apna photo yahan daalo:<br><b>images/${filename}</b></span></div>`;
 }
 
